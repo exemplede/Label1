@@ -1,0 +1,444 @@
+/* style.css */
+
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('../images/images_fond.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* Ajuste la valeur si nécessaire */
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(44, 62, 80, 0.95); /* Couleur sombre avec un peu plus d'opacité */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s; /* Transition pour l'apparition du header */
+  transform: translateY(-100%); /* Masque le header par défaut */
+}
+
+header.show {
+  transform: translateY(0); /* Affiche le header quand la classe 'show' est ajoutée */
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .logo img {
+  max-height: 50px;
+}
+
+header nav {
+  background-color: rgba(44, 62, 80, 0.95); /* Assure que le nav a le même style que le header */
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  position: relative; /* Nécessaire pour le positionnement des sous-menus */
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 10px 15px; /* Ajoute du padding pour un meilleur espacement */
+}
+
+header nav ul li a:hover {
+  color: #e74c3c; /* Couleur de survol */
+}
+
+/* Styles pour le sous-menu */
+header nav ul li ul.dropdown {
+  display: none; /* Masque les sous-menus par défaut */
+  position: absolute; /* Positionnement absolu pour les sous-menus */
+  top: 100%; /* Positionne le sous-menu directement en dessous du parent */
+  left: 0;
+  background-color: rgba(44, 62, 80, 0.95); /* Assure que les sous-menus ont le même style que le parent */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5px; /* Ajoute un léger arrondi aux coins */
+  z-index: 1000;
+}
+
+header nav ul li:hover ul.dropdown {
+  display: block; /* Affiche le sous-menu au survol du parent */
+}
+
+header nav ul li ul.dropdown li {
+  width: 200px; /* Largeur fixe pour les sous-menus */
+}
+
+header nav ul li ul.dropdown li a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: left; /* Aligne le texte à gauche pour une meilleure lisibilité */
+}
+
+header nav ul li ul.dropdown li a:hover {
+  background-color: #e74c3c; /* Change le fond au survol des sous-menus */
+  color: white;
+}
+
+/* Hero Section */
+#hero {
+  background-color: rgba(231, 76, 60, 0.85); /* Rouge inspiré du logo avec transparence */
+  color: white;
+  padding: 120px 20px 60px 20px;
+  text-align: center;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  margin-top: 80px; /* Pour éviter que le contenu soit caché derrière le header */
+}
+
+#hero .btn {
+  background-color: rgba(41, 128, 185, 0.85); /* Bleu inspiré du logo avec transparence */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+  background-color: rgba(41, 128, 185, 1);
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  text-align: center;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.section p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.section a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.section a:hover {
+  color: #e74c3c;
+}
+
+/* Service and Project Cards */
+.service-cards, .project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card, .project-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px; /* Ajuste la largeur selon les besoins */
+}
+
+.service-card:hover, .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-card i, .project-card img {
+  font-size: 50px;
+  color: #27ae60; /* Vert inspiré du logo */
+  margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(44, 62, 80, 0.95);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-around; /* Utilise space-around pour un espacement égal */
+  align-items: center; /* Aligne verticalement les éléments */
+  flex-wrap: wrap; /* Permet l'ajustement sur des petits écrans */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer .footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 0 20px;
+  text-align: left; /* Aligne le texte à gauche pour une meilleure lisibilité */
+}
+
+footer .footer-section h3 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+footer .footer-section p, footer .footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin-bottom: 10px; /* Ajoute un espacement entre les paragraphes */
+}
+
+footer a:hover {
+  color: #e74c3c;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+
+
+/* style.css */
+
+/* style.css */
+
+/* Form Styles */
+.wrapper {
+  width: 420px;
+  margin: 0 auto; /* Centrer horizontalement */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 9%, rgba(9, 9, 121, 1) 68%, rgba(0, 91, 255, 1) 97%);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+}
+
+.form-login {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold; /* Rendre le titre plus professionnel */
+  margin-bottom: 20px;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  margin: 20px 0; /* Réduire la marge pour compacter le formulaire */
+}
+
+.input-box input,
+.input-box textarea {
+  width: 79%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+  color: #fff;
+}
+
+.input-box textarea {
+  height: auto;
+  resize: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.wrapper .btn:hover {
+  background-color: #e0e0e0;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background-color: rgba(231, 76, 60, 0.85);
+  color: white;
+  padding: 120px 20px 60px 20px;
+  text-align: center;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 80px;
+}
+
+#hero .btn {
+  background-color: rgba(41, 128, 185, 0.85);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+  background-color: rgba(41, 128, 185, 1);
+}
+
+
+
+
+
+/* BUTTON FRERE */ 
+.button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.button:hover::after {
+  filter: blur(30px);
+}
+
+.button:hover::before {
+  transform: rotate(-180deg);
+}
+
+.button:active::before {
+  scale: 0.7;
+}
+
+
+

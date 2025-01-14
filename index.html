@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratoire Électronique et Informatique</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Couleur bordeaux pour la barre de navigation */
+    .navbar {
+      background-color: #2c3f3d; /* Couleur de fond rouge bordeaux */
+      font-size: 18px; /* taille pour reguler avec les autres entete */
+    }
+
+    /* Alignement des onglets à droite sur les grands écrans */
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    .navbar-toggler {
+      border-color: white;
+    }
+
+    .navbar-toggler-icon {
+      color: white;
+    }
+
+    /* Ajout d'une marge pour le logo */
+    .navbar-brand {
+      margin-right: 20px;
+    }
+
+    /* Ajout d'un espace pour compenser la barre de navigation fixe */
+    body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('../images/images_fond.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* Ajuste la valeur si nécessaire */
+}
+    .color{
+      background-color: #800020;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- Logo à gauche -->
+          <a class="navbar-brand" href="https://univ-bobo.gov.bf/">
+            <img src="logo2.jpg" alt="Logo" width="50" height="50">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="../laboratoire/logo.png" alt="Logo" width="50" height="50">
+          </a>
+          <!-- Bouton hamburger pour petits écrans -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Liens de navigation -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="formulaire.html" class="barre">Formulaire</a></li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="ekipp.html">Équipements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="a propos.html">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Le CCPS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Bienvenue sur le site officiel du laboratoire</h1>
+      <a href="a propos.html" class="btn">En savoir plus</a>
+    </div>
+  </section>
+
+  <div height="100px" max-width="100%"></div>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Nos Services</h2>
+      <div class="service-cards">
+        <a href="develec.html" class="service-card">
+          <i class="fas fa-microchip"></i>
+          <h3>Développement Électronique</h3>
+          <p>Nos progets electroniques.</p>
+        </a>
+        <a href="develog.html" class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Nos projets-le secteur pastolal</h3>
+          <p>collaboration avec les éléveurs</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Nos Projets à venir</h2>
+      <div class="jcposi">
+        <div class="jc">
+          <a target="_blank" href="im1.jpg">
+            <img src="images\img1_.jpeg" alt="Cinque Terre" width="100%" height="auto">
+          </a>
+        </div>
+        <div class="desc jc">
+          <h2>Description du Projet</h2>
+          <blockquote>
+            Le projet "Système de Surveillance Intelligente" est une initiative innovante visant à améliorer la sécurité et la surveillance dans divers environnements, tels que les campus universitaires, les bâtiments publics, et les espaces commerciaux. Le système combine l'utilisation de caméras de haute résolution, de capteurs IoT (Internet of Things), et de techniques avancées de traitement d'image et d'apprentissage automatique pour fournir une surveillance continue et proactive.
+          </blockquote>
+          <a href="develec.html" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      <div class="jcposi">
+        <div class="jc">
+          <a target="_blank" href="im2.jpg">
+            <img src="images\img2_.jpeg" alt="Cinque Terre" width="100%" max-height="75%">
+          </a>
+        </div>
+        <div class="desc jc">
+          <h2>Description du Projet</h2>
+          <blockquote>
+            Ce projet se concentre sur la création d'un réseau de capteurs intelligents pour surveiller et analyser les conditions environnementales en temps réel. Les capteurs recueillent des données sur la température, l'humidité, la qualité de l'air, et d'autres paramètres importants, et les transmettent à un système central pour le traitement et l'analyse.
+          </blockquote>
+          <a href="develog.html" class="btn">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="jc1">
+        <h1>Contact</h1>
+        <p>01 BP 1091 Bobo-Dioulasso</p>
+        <p>Bobo-Dioulasso</p>
+        <p>Burkina Faso</p>
+      </div>
+      <div class="jc1">
+        <h1>Partenaires</h1>
+        <p><a href="https://www.rohde-schwarz.com/fr/accueil_48230.html">Firme Allemande</a></p>
+        <p><a href="https://www.orange.bf/">Orange Burkina</a></p>
+        <p><a href="https://lonab.bf/">LONAB</a></p>
+        <p><a href="https://www.univ-bobo.gov.bf/">Université Nazi Boni</a></p>
+      </div>
+      <div class="jc1">
+        <h1>Liens</h1>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="formulaire.html">Formulaire</a></p>
+        <p><a href="ekipp.html">Équipements</a></p>
+       <a class="nav-link active" href="a propos.html">A propos</a>
+      <p><a href="https://exemplede.github.io/CCPS/">Le CCPS</a></p>
+      </div>
+      <div class="jc1">
+        <h1>Plateforme</h1>
+        <p><a href="https://wa.me/qr/DVWYVBGJO5R2A1"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+        <p><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+      </div>
+    </div>
+    <div>
+      &copy; <span id="year"></span> Label.
+  
+    </div>
+  </footer>
+
+
+</body>
+</html>

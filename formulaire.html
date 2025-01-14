@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratoire Électronique et Informatique</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="ente">
+    <div class="container">
+      <div style="flex: 1;">
+        <a class="navbar-brand" href="https://univ-bobo.gov.bf/">
+          <img src="images/na.jpg" alt="Logo" width="80" height="80">
+        </a>
+      </div>
+      <div style="flex: 5;">
+        <h1 style="text-transform: uppercase; font-size: 30px; color: aliceblue; text-align: center;">Université Nazi Boni</h1>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class=>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formulaire.html" class="barre">Formulaire</a></li>
+          
+          <li><a href="ekipp.html">Équipement</a></li>
+          <li class="nav-item">
+            <a href="a propos.html">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Le CCPS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div height="100px" max-width="100%"></div>
+
+  <section id="formulaire" class="section">
+    <div class="wrapper">
+      <form action="submit_form.php" method="POST">
+        <p class="form-login">Enregistre-moi</p>
+        <div class="input-box">
+          <input required="" placeholder="Nom" type="text" name="nom" />
+        </div>
+        <div class="input-box">
+          <input required="" placeholder="Prenom" type="text" name="prenom" />
+        </div>
+        <div class="input-box">
+          <input required="" placeholder="Email" type="email" name="email" />
+        </div>
+        <div class="input-box">
+          <input required="" placeholder="Numéro de téléphone" type="tel" name="phone" />
+        </div>
+        <div class="input-box">
+          <textarea required="" placeholder="Message" name="message" rows="4"></textarea>
+        </div>
+
+        <button class="button">
+        Envoyer un message
+        </button>
+        <div class="register-link">
+          <p>Vous n'avez pas de compte ? <a href="#">Inscrivez-vous</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="jc1">
+        <h1>Contact</h1>
+        <p>01 BP 1091 Bobo-Dioulasso</p>
+        <p>Bobo-Dioulasso</p>
+        <p>Burkina Faso</p>
+      </div>
+      <div class="jc1">
+        <h1>Partenaires</h1>
+        <p><a href="https://www.rohde-schwarz.com/fr/accueil_48230.html">Firme Allemande</a></p>
+        <p><a href="https://www.orange.bf/">Orange Burkina</a></p>
+        <p><a href="https://lonab.bf/">LONAB</a></p>
+        <p><a href="https://www.univ-bobo.gov.bf/">Université Nazi Boni</a></p>
+      </div>
+      <div class="jc1">
+        <h1>Liens</h1>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="formulaire.html">Formulaire</a></p>
+        <p><a href="ekipp.html">Équipement</a></p>
+       <a class="nav-link active" href="a propos.html">A propos</a>
+      <p><a href="">Le CCPS</a></p>
+      </div>
+      <div class="jc1">
+        <h1>Plateforme</h1>
+        <p><a href="https://wa.me/qr/DVWYVBGJO5R2A1"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+        <p><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+      </div>
+    </div>
+    <div>
+      &copy; <span id="year"></span> Label.
+  
+    </div>
+  </footer>
+  
+
+  <script src="javascript/script.js"></script>
+
+</body>
+</html>

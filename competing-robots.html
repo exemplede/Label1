@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Développement de Robots Compétitifs - Détails du Projet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    /* Couleur bordeaux pour la barre de navigation */
+    .navbar {
+      background-color: #3c4f41; 
+      font-size: 18px;/* taille pour reguler avec les autres entete */
+    }
+
+    /* Alignement des onglets à droite sur les grands écrans */
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    .navbar-toggler {
+      border-color: white;
+    }
+
+    .navbar-toggler-icon {
+      color: white;
+    }
+
+    /* Ajout d'une marge pour le logo */
+    .navbar-brand {
+      margin-right: 20px;
+    }
+
+    /* Ajout d'un espace pour compenser la barre de navigation fixe */
+    body {
+      padding-top: 60px; /* Ajuste la valeur si nécessaire */
+    }
+    .link-animation {
+      display: inline-block; /* Pour permettre l'animation sur le bloc */
+      padding: 20px; /* Ajoute un peu d'espace intérieur */
+      color: #fff; /* Couleur du texte */
+      text-decoration: none; /* Supprime le soulignement par défaut */
+      background-color: #800020; /* Couleur de fond par défaut */
+      border-radius: 5px; /* Bords arrondis */
+      transition: all 0.3s ease; /* Transition douce pour les changements */
+  }
+  
+  .link-animation:hover {
+      transform: scale(1.05); /* Agrandir légèrement le div */
+      background-color: #292123; /* Changer la couleur de fond au survol */
+      color: white; /* Changer la couleur du texte au survol */
+      box-shadow: 0 4px 20px rgba(97, 6, 6, 0.2); /* Ajoute une ombre */
+  }
+  
+  </style>
+</head>
+<body>
+
+<!-- Barre de navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <!-- Logo à gauche -->
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/50" alt="Logo" width="50" height="50">
+    </a>
+    <!-- Bouton hamburger pour petits écrans -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Liens de navigation -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formulaire.html">Formulaire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="a propos.html">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ekipp.html">Équipement</a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="">Le CCPS</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Fil d’Ariane -->
+<nav aria-label="breadcrumb" class="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+    <li class="breadcrumb-item"><a href="projets.html">Projets</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Développement de Robots Compétitifs</li>
+  </ol>
+</nav>
+
+<section class="container project-description">
+  <h1 class="section-title">Développement de Robots Compétitifs</h1>
+  <p>Ce projet vise à créer des robots compétitifs pour développer les compétences en automatisation et robotique parmi les étudiants, avec des compétitions comme des hackathons et des showcases.</p>
+</section>
+
+<!-- Section Équipe -->
+<section class="container team-section">
+  <h2 class="section-title">Équipe du Projet</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card p-3">
+        <img src="https://via.placeholder.com/60" alt="Chef de projet">
+        <div class="card-body">
+          <h5 class="card-title">Gabin Kpoda</h5>
+          <p class="card-text">Chef de projet</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card p-3">
+        <img src="https://via.placeholder.com/60" alt="Spécialiste en robotique">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Mamadou Belem</h5>
+          <p class="card-text">Spécialiste en robotique</p>
+        </div>
+      </div>
+    </div>
+    <!-- Répéter pour chaque membre -->
+  </div>
+</section>
+
+<!-- Section Équipement -->
+<section class="container equipment-section">
+  <h2 class="section-title">Équipement Nécessaire</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card p-3">
+        <img src="https://via.placeholder.com/60" alt="Kit de programmation">
+        <div class="card-body">
+          <h5 class="card-title">Kit de programmation</h5>
+          <p class="card-text">Utilisé pour la création et le contrôle des robots.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card p-3">
+        <img src="https://via.placeholder.com/60" alt="Module de contrôle à distance">
+        <div class="card-body">
+          <h5 class="card-title">Module de contrôle à distance</h5>
+          <p class="card-text">Permet de gérer les robots à distance.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Répéter pour chaque équipement -->
+  </div>
+</section>
+
+<!-- Section Évolution -->
+<section class="container timeline-section">
+  <h2 class="section-title">Évolution du Projet</h2>
+  <ul class="timeline">
+    <li>Décembre 2023 : Synchronisation avec partenaires</li>
+    <li>Avril 2024 : Hackathon</li>
+    <li>Mai 2024 : Showcase et inauguration</li>
+  </ul>
+</section>
+
+<!-- Galerie de Photos et Vidéos -->
+<section class="container gallery-section">
+  <h2 class="section-title">Galerie</h2>
+  <div id="mediaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Image des robots">
+      </div>
+      <div class="carousel-item">
+        <video class="d-block w-100" controls>
+          <source src="path/to/video.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas les vidéos.
+        </video>
+      </div>
+      <!-- Ajouter d'autres images ou vidéos ici -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+<!-- Pied de Page -->
+ <!-- Footer -->
+ <footer>
+  <div class="container">
+    <div class="jc1">
+      <h1>Contact</h1>
+      <p>01 BP 1091 Bobo-Dioulasso</p>
+      <p>Bobo-Dioulasso</p>
+      <p>Burkina Faso</p>
+    </div>
+    <div class="jc1">
+      <h1>Partenaires</h1>
+      <p><a href="https://www.rohde-schwarz.com/fr/accueil_48230.html">Firme Allemande</a></p>
+      <p><a href="https://www.orange.bf/">Orange Burkina</a></p>
+      <p><a href="https://lonab.bf/">LONAB</a></p>
+      <p><a href="https://www.univ-bobo.gov.bf/">Université Nazi Boni</a></p>
+    </div>
+    <div class="jc1">
+      <h1>Liens</h1>
+      <p><a href="index.html">Accueil</a></p>
+      <p><a href="formulaire.html">Formulaire</a></p>
+      <a class="nav-link active" href="a propos.html">A propos</a>
+      <p><a href="">Le CCPS</a></p>
+    </div>
+    <div class="jc1">
+      <h1>Plateforme</h1>
+      <p><a href="https://wa.me/qr/DVWYVBGJO5R2A1"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      <p><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+    </div>
+  </div>
+  <div>
+    &copy; <span id="year"></span> Label.
+
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
